@@ -1,10 +1,3 @@
-import scrapy
-
-from scrapy import signals
-from scrapy.http import Request
-from scrapy.utils.trackref import object_ref
-from scrapy.utils.url import url_is_from_spider
-
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 
@@ -33,5 +26,3 @@ class BookSpider(CrawlSpider):
             "buy": response.css('p.product-detail-page__purchased-text::text').get().split()[1],
 
         }
-
-
