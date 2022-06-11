@@ -28,7 +28,7 @@ def get_urls(text: T_HTML_TEXT) -> T_URLS:
 
 async def main():
     # url = 'https://example.com'
-    url = 'https://rozetka.ua'
+    url = 'https://tsn.ua/'
 
     text = await get_text_from_url(url)
     urls = get_urls(text=text)
